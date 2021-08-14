@@ -5,7 +5,9 @@ import javax.validation.constraints.PastOrPresent;
 import java.time.LocalDate;
 import java.util.List;
 
-@Table(name = "project")
+@Table(name = "project", indexes = {
+        @Index(name = "idx_project_name", columnList = "name")
+})
 @Entity
 public class Project {
     @Id
