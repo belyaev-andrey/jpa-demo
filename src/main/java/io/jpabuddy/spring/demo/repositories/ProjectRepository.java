@@ -14,7 +14,4 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
 
     boolean existsByIdAndManager_NameIsNotNull(Long id);
 
-
-
-
 }
